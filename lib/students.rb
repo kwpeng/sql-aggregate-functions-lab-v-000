@@ -13,6 +13,7 @@ def average_student_gpa
 end
 
 def total_tardies_for_all_students
+  select max(gpa) from students
 end
 
 def average_gpa_for_9th_grade
